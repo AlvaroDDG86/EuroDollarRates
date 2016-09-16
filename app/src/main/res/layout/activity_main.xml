@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alvaro.sqlconnection.MainActivity"
+    android:background="@drawable/eurobg"
+    android:gravity="center"
+    android:id="@+id/rl">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerMonedas"
+        android:spinnerMode="dialog"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:gravity="center"
+        android:typeface="serif"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:scrollIndicators="top|bottom|start|end"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/abc_text_size_display_4_material"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewCambio"
+        android:layout_below="@+id/spinnerMonedas"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGold"
+        android:textSize="@dimen/abc_text_size_display_3_material"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@android:color/transparent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/abc_text_size_display_4_material"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextEuro"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:gravity="center"
+        android:typeface="serif"
+        android:background="@color/colorAccent"
+        android:textSize="@dimen/abc_text_size_display_3_material"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:maxLength="7"
+        android:layout_below="@+id/textViewCambio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewName"
+        android:textColor="@color/colorGold"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:text="@string/title"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+        android:layout_below="@+id/editTextEuro"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <Button
+            android:id="@+id/buttonEuro"
+            android:layout_alignParentTop="true"
+            android:text="EURO"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#1808A8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"/>
+        <Button
+            android:id="@+id/buttonDollar"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/buttonEuro"
+            android:layout_toEndOf="@+id/buttonEuro"
+            android:text="DOLLAR"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#1808A8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewDate"
+        android:textColor="@color/colorGold"
+        android:layout_above="@+id/textViewName"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

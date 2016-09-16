@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Euro Dollar Rates</string>
+    <string name="moneda">Moneda</string>
+    <string name="title">Euro Dollar Converter</string>
+</resources>

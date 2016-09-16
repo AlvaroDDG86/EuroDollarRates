@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center"
+    android:foreground="@android:color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/moneda"
+        android:id="@+id/textViewMoneda"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewFlag"
+        android:layout_below="@+id/textViewMoneda"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_australia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="precio"
+        android:id="@+id/textViewPrecio"
+        android:layout_below="@+id/imageViewFlag"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_orange_dark" />
+
+</RelativeLayout>
